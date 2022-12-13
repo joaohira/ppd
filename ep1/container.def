@@ -1,0 +1,17 @@
+Bootstrap: docker
+From: ufscar/ubuntu_mpich:latest
+
+%help
+  Programas para calculo de pi de modo sequencial, com pthreads e com openmp - PPD 2022.2
+
+%files
+  ./app/* /opt
+
+%post
+  echo "Compiling..."
+  cd /opt && make all
+  cp pi_seq pi_pth pi_omp /usr/bin/
+
+
+%runscript
+  exec $@

@@ -1,0 +1,30 @@
+*** pi_seq - Sequencial ***
+	pi with 1000000000 steps is 3.141592654 in 3.425222 seconds
+
+*** pi_pth - Pthreads ***
+n_threads = 1
+	pi with 1000000000 steps is 3.141592654 in 3.432877 seconds
+n_threads = 2
+	pi with 1000000000 steps is 3.141592654 in 1.702839 seconds
+n_threads = 5
+	pi with 1000000000 steps is 3.141592654 in 0.750537 seconds
+n_threads = 10
+	pi with 1000000000 steps is 3.141592654 in 0.466926 seconds
+n_threads = 20
+	pi with 1000000000 steps is 3.141592654 in 0.313313 seconds
+n_threads = 40
+	pi with 1000000000 steps is 3.141592654 in 0.187603 seconds
+
+*** pi_omp - OpenMP ***
+n_threads = 1
+	pi with 1000000000 steps is 3.141592654 in 3.410666 seconds in 1 procs
+n_threads = 2
+	pi with 1000000000 steps is 3.141592654 in 1.697570 seconds in 2 procs
+n_threads = 5
+	pi with 1000000000 steps is 3.141592654 in 0.714293 seconds in 5 procs
+n_threads = 10
+	pi with 1000000000 steps is 3.141592654 in 0.382183 seconds in 10 procs
+n_threads = 20
+	pi with 1000000000 steps is 3.141592654 in 0.247774 seconds in 20 procs
+n_threads = 40
+	pi with 1000000000 steps is 3.141592654 in 0.152581 seconds in 40 procs
